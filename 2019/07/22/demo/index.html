@@ -8,21 +8,21 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo博客搭建+更换主题 | YYYBLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="博客搭建参考博客 准备过程 Node.js  Git  Hexo(在Git Bash中运行)  安装Hexo 1$ npm install -g hexo-cli  初始化Hexo 其中path为Hexo初始化文件的路径，也称站点目录 123$ hexo init path$ cd path$ npm install      完成之后如果出现12npm WARN optional SKIPPIN">
+  <meta name="description" content="博客搭建参考博客 准备过程 Node.js  Git  Hexo(在Git Bash中运行)  安装Hexo 1$ npm install -g hexo-cli  初始化Hexo 其中path为Hexo初始化文件的路径，也称站点目录 123$ hexo init path$ cd path$ npm install  完成之后如果出现 12npm WARN optional SKIPPING O">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo博客搭建+更换主题">
 <meta property="og:url" content="http://yoursite.com/2019/07/22/demo/index.html">
 <meta property="og:site_name" content="YYYBLOG">
-<meta property="og:description" content="博客搭建参考博客 准备过程 Node.js  Git  Hexo(在Git Bash中运行)  安装Hexo 1$ npm install -g hexo-cli  初始化Hexo 其中path为Hexo初始化文件的路径，也称站点目录 123$ hexo init path$ cd path$ npm install      完成之后如果出现12npm WARN optional SKIPPIN">
+<meta property="og:description" content="博客搭建参考博客 准备过程 Node.js  Git  Hexo(在Git Bash中运行)  安装Hexo 1$ npm install -g hexo-cli  初始化Hexo 其中path为Hexo初始化文件的路径，也称站点目录 123$ hexo init path$ cd path$ npm install  完成之后如果出现 12npm WARN optional SKIPPING O">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2019/07/22/demo/demo_files/2.png">
 <meta property="og:image" content="http://yoursite.com/2019/07/22/demo/demo_files/1.png">
 <meta property="og:image" content="http://yoursite.com/2019/07/22/demo/demo_files/3.png">
 <meta property="og:image" content="http://yoursite.com/2019/07/22/demo/demo_files/1.jpg">
-<meta property="og:updated_time" content="2019-07-22T13:56:32.107Z">
+<meta property="og:updated_time" content="2019-07-22T14:12:09.172Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客搭建+更换主题">
-<meta name="twitter:description" content="博客搭建参考博客 准备过程 Node.js  Git  Hexo(在Git Bash中运行)  安装Hexo 1$ npm install -g hexo-cli  初始化Hexo 其中path为Hexo初始化文件的路径，也称站点目录 123$ hexo init path$ cd path$ npm install      完成之后如果出现12npm WARN optional SKIPPIN">
+<meta name="twitter:description" content="博客搭建参考博客 准备过程 Node.js  Git  Hexo(在Git Bash中运行)  安装Hexo 1$ npm install -g hexo-cli  初始化Hexo 其中path为Hexo初始化文件的路径，也称站点目录 123$ hexo init path$ cd path$ npm install  完成之后如果出现 12npm WARN optional SKIPPING O">
 <meta name="twitter:image" content="http://yoursite.com/2019/07/22/demo/demo_files/2.png">
   
     <link rel="alternative" href="/atom.xml" title="YYYBLOG" type="application/atom+xml">
@@ -193,19 +193,15 @@
 <li><p>初始化Hexo 其中path为Hexo初始化文件的路径，也称站点目录</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init path</span><br><span class="line">$ cd path</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-</li>
-</ol>
-<ul>
-<li>完成之后如果出现<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br></pre></td></tr></table></figure>
+<li><p>完成之后如果出现</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br></pre></td></tr></table></figure>
 
+<p>查过之后发现，由于fsevents是mac的，因为是Windows或者Linux都会出现这个警告，忽略即可。<br>fsevent是用来检测文件目录的修改，记录恶意软件的非法操作，获取恶意软件的完整途径，删除和修改日期。</p>
+</li>
+<li><p>在站点目录下会产生文件与文件夹<br><img src="demo_files/2.png" alt></p>
 </li>
 </ul>
-<p>查过之后发现，由于fsevents是mac的，因为是Windows或者Linux都会出现这个警告，忽略即可。<br>fsevent是用来检测文件目录的修改，记录恶意软件的非法操作，获取恶意软件的完整途径，删除和修改日期。</p>
-<ul>
-<li>在站点目录下会产生文件与文件夹<br><img src="demo_files/2.png" alt></li>
-</ul>
-<ol start="4">
+</li>
 <li><p>启动服务器(在Git Bash中运行)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 </li>
