@@ -211,20 +211,30 @@
 
 </li>
 </ol>
-<p>后面默认回车即可<br>在C盘用户文件夹下的.ssh下有一个<em>id_rsa.pub</em>文件，如若双击无法打开可尝试使用sublime等，将其中的key复制，<br>在GitHub中点击头像选择<figure class="highlight plain"><figcaption><span>and GPG Keys```，其中的Title随便填，</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">将刚刚复制的内容粘贴到```Key```中，点击添加随即成功。</span><br><span class="line">![](demo_files/1.png)  </span><br><span class="line"></span><br><span class="line">3. 测试是否成功(在Git Bash中运行)</span><br></pre></td></tr></table></figure></p>
-<p>$ ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![](demo_files/3.png)</span><br><span class="line">出现```You’ve successfully authenticated```就成功了</span><br><span class="line">4. 安装```hexo-deployer-git```插件(在Git Bash中运行)</span><br></pre></td></tr></table></figure>
+<p>后面默认回车即可<br>在C盘用户文件夹下的.ssh下有一个<em>id_rsa.pub</em>文件，如若双击无法打开可尝试使用sublime等，将其中的key复制，<br>在GitHub中点击头像选择<em>Settings</em>，左边选择<em>SSH and GPG Keys</em>，其中的Title随便填，<br>将刚刚复制的内容粘贴到<em>Key</em>中，点击添加随即成功。<br><img src="demo_files/1.png" alt>  </p>
+<ol start="3">
+<li>测试是否成功(在Git Bash中运行)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 
-<p>$ npm install hexo-deployer-git –save</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5. 修改站点目录下的*_config.yml*站点配置文件</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><img src="demo_files/3.png" alt><br>出现<em>You’ve successfully authenticated</em>就成功了</p>
+<ol start="4">
+<li><p>安装<em>hexo-deployer-git</em>插件(在Git Bash中运行)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改站点目录下的<em>_config.yml</em>站点配置文件  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: git@github.com:&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
 
-<h1 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h1><h2 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></h2><p>deploy:<br>type: git<br>repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io.git<br>branch: master</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">其中repo填写仓库地址的SSH</span><br><span class="line">![](demo_files/1.jpg)</span><br><span class="line">只要按照步骤1将其切换到SSH，再将2中的内容复制到repo即可</span><br><span class="line">6. 推送到GitHubPages(在Git Bash中运行)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>其中repo填写仓库地址的SSH<br><img src="demo_files/1.jpg" alt><br>只要按照步骤1将其切换到SSH，再将2中的内容复制到repo即可</p>
+<ol start="6">
+<li>推送到GitHubPages(在Git Bash中运行)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g or $ hexo generate</span><br><span class="line">$ hexo d or $ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>$ hexo g or $ hexo generate<br>$ hexo d or $ hexo deploy</p>
-<pre><code>当返回```INFO Deploy done: git```时，就已经推送成功了。  
-一分钟过去啦。  
-访问```https://&lt;Github账号名称&gt;.github.io```就可以看到自己的博客了。</code></pre>
+</li>
+</ol>
+<p>当返回<em>INFO Deploy done: git</em>时，就已经推送成功了。<br>一分钟过去啦。<br>访问<em>https://&lt;Github账号名称&gt;.github.io</em>就可以看到自己的博客了。</p>
+
       
 
       
