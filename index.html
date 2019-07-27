@@ -152,6 +152,73 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-base01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/27/base01/">整理一下昨晚关于操作数据库需不需要联网的问题</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/27/base01/" class="archive-article-date">
+  	<time datetime="2019-07-27T01:46:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="首先-联网的目的"><a href="#首先-联网的目的" class="headerlink" title="首先 联网的目的"></a>首先 联网的目的</h4><p>可以与想要访问的服务器建立连接<br>服务器又相当于一台性能更好提供特殊服务的电脑，统称计算机</p>
+<h5 id="服务器上主要放什么东西呢"><a href="#服务器上主要放什么东西呢" class="headerlink" title="服务器上主要放什么东西呢"></a>服务器上主要放什么东西呢</h5><p>其实本地电脑上可以放的东西都可以放上去，所以像数据库，网页等，将我们的项目放在服务器上一直run着。</p>
+<h5 id="所以联网的目的"><a href="#所以联网的目的" class="headerlink" title="所以联网的目的"></a>所以联网的目的</h5><p>就是访问服务器那一端的所提供的信息。</p>
+<h3 id="操作数据库需要联网！"><a href="#操作数据库需要联网！" class="headerlink" title="操作数据库需要联网！"></a>操作数据库需要联网！</h3><h5 id="计算机网络分为局域网、城域网、广域网，其中LAN指的是局域网（Local-Area-Network）"><a href="#计算机网络分为局域网、城域网、广域网，其中LAN指的是局域网（Local-Area-Network）" class="headerlink" title="计算机网络分为局域网、城域网、广域网，其中LAN指的是局域网（Local Area Network）"></a>计算机网络分为局域网、城域网、广域网，其中LAN指的是局域网（Local Area Network）</h5><p>通过名字很好理解，网络的范围局域网&lt;城域网&lt;广域网，比如连接同一个WiFi、热点说明在同一个局域网下。</p>
+<h4 id="再来说说连接网络时的各种协议"><a href="#再来说说连接网络时的各种协议" class="headerlink" title="再来说说连接网络时的各种协议"></a>再来说说连接网络时的各种协议</h4><p>HTTP、HTTPS、TCP、ftp、IP<br>其中的tp(Transfer Protocol)传输协议的意思。<br>HTTP: Hypertext Transfer Protocol 超文本传输协议 使用明文方式发送内容<br>HTTPS = HTTP + SSL: Secure Hypertext Transfer Protocol 安全超文本传输协议 证书验证<br>TCP: Transfer Control Protocol 传输控制协议 三次握手协议<br>ftp: File Transfer Protocol 文件传输协议<br>IP: Internet Protocol 网络协议<br><img src="/2019/07/27/base01/1.jpg" alt></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/27/base01/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-showImg" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -159,7 +226,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/25/showImg/">showImg</a>
+      <a class="article-title" href="/2019/07/25/showImg/">解决博客中图片无法显示的问题</a>
     </h1>
   
 
@@ -172,7 +239,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="解决博客中图片无法显示的问题"><a href="#解决博客中图片无法显示的问题" class="headerlink" title="解决博客中图片无法显示的问题"></a>解决博客中图片无法显示的问题</h2><p>在Git Bash中使用</p>
+        <p>在Git Bash中使用</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n &lt;博文名&gt;</span><br></pre></td></tr></table></figure>
 
 <p>就会出现与.md文件同名的一个文件夹<br>此时只要把图片放在这个文件夹中，在.md文件中只需使用相对路径就可以了<br>这样做就可以在博文中看到自己添加的图片了。</p>
@@ -225,7 +292,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/25/startHexo/">startHexo</a>
+      <a class="article-title" href="/2019/07/25/startHexo/">博客搭建</a>
     </h1>
   
 
@@ -238,7 +305,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><p><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">参考博客</a></p>
+        <p><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">参考博客</a></p>
 <h3 id="准备过程"><a href="#准备过程" class="headerlink" title="准备过程"></a>准备过程</h3><ol>
 <li><p><a href="https://www.simon96.online/2018/11/10/hexo-env/" target="_blank" rel="noopener">Node.js</a></p>
 </li>
