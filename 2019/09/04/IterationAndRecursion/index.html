@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>YYYBLOG</title>
+  <title>迭代和递归 | YYYBLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="YYYBLOG">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="迭代和递归的区别迭代迭代利用现有的资源产生新的资源比如斐波那契数列：1 1 2 3 5 8 13 21是将前两项相加产生下一项  而迭代，是通过无数次，不断的，重复的，接近一个目标，折返接近，再折返再接近，最终达到目标。它不是一次性完成的，是通过不断重复的，但每次重复又比之前更好一点，这样一种非线性的进程。  递归递归类似于树，大问题化小目的是root，但是已知的数据在树的某一个分支，所以需要一层">
+<meta property="og:type" content="article">
+<meta property="og:title" content="迭代和递归">
+<meta property="og:url" content="http://yoursite.com/2019/09/04/IterationAndRecursion/index.html">
 <meta property="og:site_name" content="YYYBLOG">
+<meta property="og:description" content="迭代和递归的区别迭代迭代利用现有的资源产生新的资源比如斐波那契数列：1 1 2 3 5 8 13 21是将前两项相加产生下一项  而迭代，是通过无数次，不断的，重复的，接近一个目标，折返接近，再折返再接近，最终达到目标。它不是一次性完成的，是通过不断重复的，但每次重复又比之前更好一点，这样一种非线性的进程。  递归递归类似于树，大问题化小目的是root，但是已知的数据在树的某一个分支，所以需要一层">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-09-04T08:01:42.001Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YYYBLOG">
+<meta name="twitter:title" content="迭代和递归">
+<meta name="twitter:description" content="迭代和递归的区别迭代迭代利用现有的资源产生新的资源比如斐波那契数列：1 1 2 3 5 8 13 21是将前两项相加产生下一项  而迭代，是通过无数次，不断的，重复的，接近一个目标，折返接近，再折返再接近，最终达到目标。它不是一次性完成的，是通过不断重复的，但每次重复又比之前更好一点，这样一种非线性的进程。  递归递归类似于树，大问题化小目的是root，但是已知的数据在树的某一个分支，所以需要一层">
   
     <link rel="alternative" href="/atom.xml" title="YYYBLOG" type="application/atom+xml">
   
@@ -150,16 +154,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-IterationAndRecursion" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-IterationAndRecursion" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/04/IterationAndRecursion/">迭代和递归</a>
+    <h1 class="article-title" itemprop="name">
+      迭代和递归
     </h1>
   
 
@@ -184,6 +186,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -191,16 +214,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/04/IterationAndRecursion/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/04/IterationAndRecursion/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/04/Quicksort/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">快速排序(Quicksort)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -220,489 +302,14 @@
 
 
 
-
   
-    <article id="post-Quicksort" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/04/Quicksort/">快速排序(Quicksort)</a>
-    </h1>
   
 
-        
-        <a href="/2019/09/04/Quicksort/" class="archive-article-date">
-  	<time datetime="2019-09-04T03:54:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="整理"><a href="#整理" class="headerlink" title="整理"></a>整理</h2><h3 id="主要有3种方法"><a href="#主要有3种方法" class="headerlink" title="主要有3种方法"></a>主要有3种方法</h3><p>首先，选择基准数，一般选择第一个数或者最后一个数，但是如果第一个数正好是最大的一个数，那么效率最差，相当于冒泡排序，时间复杂度为O(N^2)<br>还可以选择第一个数，最后一个数，中间数，三者中的中间数。<br>所以最佳的是选择中位数。</p>
-<ol>
-<li><p>左右指针法<br>选择两个指针left=&gt;比基准数大的数,right=&gt;比基准数小的数。<br>分别从第一个数和最后一个数开始寻找，找到后交换两个的值。<br>最后的时候将left与基准数交换位置<br><img src="/2019/09/04/Quicksort/1.png" alt></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">//    左右指针(递归)</span><br><span class="line">    static void QuickSort1(int[] array, int left, int right) &#123;</span><br><span class="line">        if (left &gt; right) &#123;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        int key = array[left];</span><br><span class="line">        int temp;</span><br><span class="line">        int low = left;</span><br><span class="line">        int high = right;</span><br><span class="line">        for (; low &lt; high; ) &#123;</span><br><span class="line">            if (array[high] &lt; key) &#123;</span><br><span class="line">                if (array[low] &gt; key) &#123;</span><br><span class="line">                    temp = array[high];</span><br><span class="line">                    array[high] = array[low];</span><br><span class="line">                    array[low] = temp;</span><br><span class="line">                    low++;</span><br><span class="line">                    high--;</span><br><span class="line">                &#125; else &#123;</span><br><span class="line">                    low++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                high--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        temp = array[high];</span><br><span class="line">        array[high] = key;</span><br><span class="line">        array[left] = temp;</span><br><span class="line">        System.out.println(low);</span><br><span class="line">        System.out.println(high);</span><br><span class="line">        System.out.println(right);</span><br><span class="line">        System.out.println();</span><br><span class="line">        if (low != 0) &#123;</span><br><span class="line">            QuickSort1(array, left, low - 1);</span><br><span class="line">        &#125;</span><br><span class="line">        if (high != 9) &#123;</span><br><span class="line">            QuickSort1(array, high + 1, right);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>挖坑法<br>两个指针left=&gt;比基准数大的数,right=&gt;比基准数小的数。<br>遵循左右交替<br>如果right找到，将right的值填入left，继续left右移。<br>如果left找到，将left的值填入right，继续right左移。<br><img src="/2019/09/04/Quicksort/2.png" alt></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">static void QuickSort3(int[] array, int left, int right) &#123;</span><br><span class="line">        if (left &gt; right) &#123;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        int key = array[left];</span><br><span class="line">        int low = left;</span><br><span class="line">        int high = right;</span><br><span class="line">        while (low &lt; high) &#123;</span><br><span class="line">            while (array[high] &gt; key) &#123;</span><br><span class="line">                high--;</span><br><span class="line">            &#125;</span><br><span class="line">            if (low &lt; high) &#123;</span><br><span class="line">                array[low] = array[high];</span><br><span class="line">                low++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            while (array[low] &lt; key) &#123;</span><br><span class="line">                low++;</span><br><span class="line">            &#125;</span><br><span class="line">            if (low &lt; high) &#123;</span><br><span class="line">                array[high] = array[low];</span><br><span class="line">                high--;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        array[high] = key;</span><br><span class="line">        System.out.println(low);</span><br><span class="line">        System.out.println(high);</span><br><span class="line">        System.out.println(right);</span><br><span class="line">        System.out.println();</span><br><span class="line">        if (low != 0) &#123;</span><br><span class="line">            QuickSort3(array, left, low - 1);</span><br><span class="line">        &#125;</span><br><span class="line">        if (high != 9) &#123;</span><br><span class="line">            QuickSort3(array, high + 1, right);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>前后指针法<br>两个指针pre=&gt;比基准数大的数,cur=&gt;比基准数小的数。<br>pre指向cur的前一个位置<br>cur一直往右，pre找到停止，cur继续找到，交换两个的值。<br><img src="/2019/09/04/Quicksort/3.png" alt></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">还有错，没写出来</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><p>最坏：O(N^2)<br>最优：O( nlogn )<br>平均：O( nlogn )</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">排序</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/04/Quicksort/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-base01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/27/base01/">整理一下昨晚关于操作数据库需不需要联网的问题</a>
-    </h1>
   
 
-        
-        <a href="/2019/07/27/base01/" class="archive-article-date">
-  	<time datetime="2019-07-27T01:46:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="首先-联网的目的"><a href="#首先-联网的目的" class="headerlink" title="首先 联网的目的"></a>首先 联网的目的</h4><p>可以与想要访问的服务器建立连接<br>服务器又相当于一台性能更好提供特殊服务的电脑，统称计算机</p>
-<h5 id="服务器上主要放什么东西呢"><a href="#服务器上主要放什么东西呢" class="headerlink" title="服务器上主要放什么东西呢"></a>服务器上主要放什么东西呢</h5><p>其实本地电脑上可以放的东西都可以放上去，所以像数据库，网页等，将我们的项目放在服务器上一直run着。</p>
-<h5 id="所以联网的目的"><a href="#所以联网的目的" class="headerlink" title="所以联网的目的"></a>所以联网的目的</h5><p>就是访问服务器那一端的所提供的信息。</p>
-<h3 id="操作数据库需要联网！"><a href="#操作数据库需要联网！" class="headerlink" title="操作数据库需要联网！"></a>操作数据库需要联网！</h3><h5 id="计算机网络分为局域网、城域网、广域网，其中LAN指的是局域网（Local-Area-Network）"><a href="#计算机网络分为局域网、城域网、广域网，其中LAN指的是局域网（Local-Area-Network）" class="headerlink" title="计算机网络分为局域网、城域网、广域网，其中LAN指的是局域网（Local Area Network）"></a>计算机网络分为局域网、城域网、广域网，其中LAN指的是局域网（Local Area Network）</h5><p>通过名字很好理解，网络的范围局域网&lt;城域网&lt;广域网，比如连接同一个WiFi、热点说明在同一个局域网下。</p>
-<h4 id="再来说说连接网络时的各种协议"><a href="#再来说说连接网络时的各种协议" class="headerlink" title="再来说说连接网络时的各种协议"></a>再来说说连接网络时的各种协议</h4><p>HTTP、HTTPS、TCP、ftp、IP<br>其中的tp(Transfer Protocol)传输协议的意思。<br>HTTP: Hypertext Transfer Protocol 超文本传输协议 使用明文方式发送内容<br>HTTPS = HTTP + SSL: Secure Hypertext Transfer Protocol 安全超文本传输协议 证书验证<br>TCP: Transfer Control Protocol 传输控制协议 三次握手协议<br>ftp: File Transfer Protocol 文件传输协议<br>IP: Internet Protocol 网络协议<br><img src="/2019/07/27/base01/1.jpg" alt></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/27/base01/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-showImg" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/25/showImg/">解决博客中图片无法显示的问题</a>
-    </h1>
   
 
-        
-        <a href="/2019/07/25/showImg/" class="archive-article-date">
-  	<time datetime="2019-07-25T14:08:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在Git Bash中使用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n &lt;博文名&gt;</span><br></pre></td></tr></table></figure>
-
-<p>就会出现与.md文件同名的一个文件夹<br>此时只要把图片放在这个文件夹中，在.md文件中只需使用相对路径就可以了<br>这样做就可以在博文中看到自己添加的图片了。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/25/showImg/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-startHexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/25/startHexo/">博客搭建</a>
-    </h1>
-  
-
-        
-        <a href="/2019/07/25/startHexo/" class="archive-article-date">
-  	<time datetime="2019-07-25T14:05:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">参考博客</a></p>
-<h3 id="准备过程"><a href="#准备过程" class="headerlink" title="准备过程"></a>准备过程</h3><ol>
-<li><p><a href="https://www.simon96.online/2018/11/10/hexo-env/" target="_blank" rel="noopener">Node.js</a></p>
-</li>
-<li><p><a href="https://www.simon96.online/2018/11/10/hexo-env/" target="_blank" rel="noopener">Git</a></p>
-</li>
-<li><p>Hexo(在Git Bash中运行)</p>
-<ul>
-<li><p>安装Hexo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>初始化Hexo 其中path为Hexo初始化文件的路径，也称站点目录</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init path</span><br><span class="line">$ cd path</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>完成之后如果出现</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>查过之后发现，由于fsevents是mac的，因为是Windows或者Linux都会出现这个警告，忽略即可。<br>fsevent是用来检测文件目录的修改，记录恶意软件的非法操作，获取恶意软件的完整途径，删除和修改日期。</p>
-</li>
-<li><p>在站点目录下会产生文件与文件夹<br><img src="/2019/07/25/startHexo/2.png" alt></p>
-</li>
-</ul>
-</li>
-<li><p>启动服务器(在Git Bash中运行)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>浏览器访问网址<br><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a><br>目前Hexo博客已经成功搭建在了本地  </p>
-</li>
-</ol>
-<h3 id="将本地博客推送到GitHub"><a href="#将本地博客推送到GitHub" class="headerlink" title="将本地博客推送到GitHub"></a>将本地博客推送到GitHub</h3><ol>
-<li>登录GitHub–&gt;创建仓库(repositories)，注意<strong>!!!</strong> 仓库名为: <strong>&lt;GitHub账号名称&gt;.github.io</strong></li>
-<li>生成SSH Key(在Git Bash中运行)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/.ssh</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;yourEmail&quot;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>后面默认回车即可<br>在C盘用户文件夹下的.ssh下有一个<code>id_rsa.pub</code>文件，如若双击无法打开可尝试使用sublime等，将其中的key复制，<br>在GitHub中点击头像选择<code>Settings</code>，左边选择<code>SSH and GPG Keys</code>，其中的Title随便填，<br>将刚刚复制的内容粘贴到<code>Key</code>中，点击添加随即成功。<br><img src="/2019/07/25/startHexo/1.png" alt>  </p>
-<ol start="3">
-<li>测试是否成功(在Git Bash中运行)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p><img src="/2019/07/25/startHexo/3.png" alt><br>出现<em>You’ve successfully authenticated</em>就成功了</p>
-<ol start="4">
-<li><p>安装<em>hexo-deployer-git</em>插件(在Git Bash中运行)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改站点目录下的<code>_config.yml</code>站点配置文件  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">type: git</span><br><span class="line">repo: git@github.com:&lt;Github账号名称&gt;/&lt;Github账号名称&gt;.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>其中repo填写仓库地址的SSH<br><img src="/2019/07/25/startHexo/1.jpg" alt><br>只要按照步骤1将其切换到SSH，再将2中的内容复制到repo即可</p>
-<ol start="6">
-<li>推送到GitHubPages(在Git Bash中运行)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g or $ hexo generate</span><br><span class="line">$ hexo d or $ hexo deploy</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>当返回<code>INFO Deploy done: git</code>时，就已经推送成功了。<br>一分钟过去啦。<br>访问<code>https://&lt;Github账号名称&gt;.github.io</code>就可以看到自己的博客了。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/25/startHexo/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-matlab" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/25/matlab/">matlab</a>
-    </h1>
-  
-
-        
-        <a href="/2019/07/25/matlab/" class="archive-article-date">
-  	<time datetime="2019-07-25T14:01:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-25</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="下载破解资源"><a href="#下载破解资源" class="headerlink" title="下载破解资源"></a>下载破解资源</h3><p><a href="https://pan.baidu.com/s/1CZiJ8ZAlV-urKpRhq7uhaA" target="_blank" rel="noopener">百度网盘地址</a>提取密码f9l1</p>
-<h3 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h3><p>下载之后将ISO文件解压之后点击<em>setup.exe</em><br><img src="/2019/07/25/matlab/1.png" alt><br>打开之后选择<em>使用文件安装密钥</em><br><img src="/2019/07/25/matlab/2.png" alt><br>接受条款<br><img src="/2019/07/25/matlab/3.png" alt><br>将crack中的<code>matlab2019a安装密钥.txt</code>的安装密钥复制到空白处<br><img src="/2019/07/25/matlab/4.png" alt><br>选择安装位置<br><img src="/2019/07/25/matlab/1.jpg" alt><br>默认下一步<br><img src="/2019/07/25/matlab/2.jpg" alt><br>等待安装完成即可</p>
-<h3 id="复制破解文件"><a href="#复制破解文件" class="headerlink" title="复制破解文件"></a>复制破解文件</h3><p>将下载资源中的<code>netapi32.dll</code>复制到安装目录下的bin/win64中<br><img src="/2019/07/25/matlab/3.jpg" alt><br><img src="/2019/07/25/matlab/4.jpg" alt><br>以及将资源中的<code>license_standalone.lic</code>复制到安装目录的licenses中<br><img src="/2019/07/25/matlab/6.jpg" alt><br><img src="/2019/07/25/matlab/5.jpg" alt><br>完成之后，打开Polyspace R2019a<br><img src="/2019/07/25/matlab/7.jpg" alt><br>选择手动激活<br><img src="/2019/07/25/matlab/8.jpg" alt><br>选择licenses中的<code>license_standalone.lic</code>路径<br><img src="/2019/07/25/matlab/9.jpg" alt><br>点击下一步，至此激活完成。</p>
-<h3 id="完成破解-安装"><a href="#完成破解-安装" class="headerlink" title="完成破解+安装"></a>完成破解+安装</h3><p>最后我们只要打开安装目录下的bin\win64中的MATLAB.exe即可，并记得创建快捷方式到桌面方便下次打开<br><img src="/2019/07/25/matlab/10.jpg" alt><br>恭喜你！MATLAB破解并安装完成啦<br><img src="/2019/07/25/matlab/11.jpg" alt></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/25/matlab/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/07/21/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2019/07/21/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-21T05:56:02.330Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/07/21/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
 
 
@@ -725,8 +332,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
